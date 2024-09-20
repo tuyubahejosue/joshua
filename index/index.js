@@ -8,7 +8,7 @@ audio = new Audio("tunes/a.wav");//by default, audio src is "a"tune
 
 const playTune = (key) => {
     audio.src = `tunes/${key}.wav`;
-    audio.play();//playing an audio
+    audio.play(),//playing an audio
     console.log(allKeys);
 
     const clickedKey = document.querySelector(`[data-key="${key}"]`);;//getting clicked key elements
